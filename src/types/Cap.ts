@@ -1,5 +1,10 @@
+export interface Category {
+  id: string
+  name: string
+  slug: string
+}
+
 export interface Cap {
-  [x: string]: string | number | Date
   id: number
   name: string
   price: number
@@ -7,4 +12,5 @@ export interface Cap {
   image: string
   category_id: string
   created_at: Date
+  category?: Category  // Esto debe ser un objeto con esas propiedades
 }
