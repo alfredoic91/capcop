@@ -1,5 +1,5 @@
 export interface Cap {
-  [x: string]: any
+  [x: string]: string | number | Date
   id: number
   name: string
   price: number

@@ -36,7 +36,7 @@ export default function TestimonialsSection() {
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {visibleTestimonials.map((t) => (
             <div key={t.id} className="bg-white p-6 rounded-xl shadow-md">
-              <p className="text-gray-700 italic mb-4">"{t.message}"</p>
+              <p className="text-gray-700 italic mb-4">&quot;{t.message}&quot;</p>
               <p className="font-semibold">{t.name}</p>
               {t.role && <p className="text-sm text-gray-500">{t.role}</p>}
             </div>

@@ -2,7 +2,23 @@ import CapGrid from '@/components/CapGrid'
 import ContactSection from '@/components/ContactSection'
 import Header from '@/components/Header'
 
-export default async function CategoriaPage({ params }: { params: { slug: string } }) {
+export default function CategoriaPage() {
+  return (
+    <main className="min-h-screen bg-white text-black p-4">
+      <section>
+        <Header />
+      </section>
+      <section>
+        <CapGrid />
+      </section>
+      <section>
+        <ContactSection />
+      </section>
+    </main>
+  )
+}
+
+/*export default async function CategoriaPage({ params }: { params: { slug: string } }) {
   return (
     <main className="min-h-screen bg-white text-black p-4">
       <section>
@@ -16,4 +32,4 @@ export default async function CategoriaPage({ params }: { params: { slug: string
       </section>
     </main>
   )
-}
+}*/
